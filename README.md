@@ -8,6 +8,7 @@
 - [Docker Desktop 설치 - mac](https://docs.docker.com/desktop/mac/install/)
 - [Docker Desktop 설치 - window](https://docs.docker.com/desktop/windows/install/)
 
+- django의 버전은 3.0.8에서 작업해주세요
 
 
 
