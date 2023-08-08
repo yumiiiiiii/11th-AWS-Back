@@ -33,3 +33,4 @@ DATABASE_PORT=3306
 
 - **LF will be replaced by CRLF in config/docker/config/docker/entrypoint.prod.sh.**
 - git config --global core.autocrlf true 입력
+- **ALTER TABLE (테이블명) convert to charset utf8;** -> 참고로 docker-compose.yml의 계정으로 해야함.
