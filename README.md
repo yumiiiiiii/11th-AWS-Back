@@ -25,7 +25,7 @@ DATABASE_PASSWORD={mysql 비밀번호}
 DATABASE_HOST=localhost
 DATABASE_PORT=3306
 ```
-
+앗 실수했따
 
 -----
 
