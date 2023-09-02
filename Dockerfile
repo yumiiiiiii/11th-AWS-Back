@@ -8,10 +8,6 @@ WORKDIR /app
 RUN apk add --no-cache mariadb-connector-c-dev
 RUN apk update && apk add python3 python3-dev mariadb-dev build-base && pip3 install mysqlclient && apk del python3-dev mariadb-dev build-base
 
-RUN pip install --upgrade pip setuptools wheel
-RUN pip install -U wheel
-# 오류수정
-
 
 # By copying over requirements first, we make sure that Docker will cache
 # our installed requirements rather than reinstall them on every build
