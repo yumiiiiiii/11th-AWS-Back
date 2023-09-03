@@ -16,8 +16,6 @@
 - Github Actions가 실행이 안돼요!
     > deploy.yml파일에 push을 해줘도 가끔 git이 못알아먹어요...
 
-    > yml파일 하나 새로 만들어주세요(아무거나 상관없음. 안쓸거임)
-
 - github Actions 오류
     > 오류가 너무 다양하지만...경험상 모듈끼리의 충돌이 원인인 경우가 많습니다! pip freeze > requirements.txt 를 한 후 backports.zoneinfo, mysqlclient는 주석처리후 다시 push 해주세요.
 
