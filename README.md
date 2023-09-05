@@ -1,6 +1,8 @@
 # 11th-AWS-Back
 
 ### 오류 정리
+- MySQL 설치할 때 port번호 오류가 난다면?
+    > [참고 사이트](https://blog.naver.com/sosohaguna/223039113294)
 
 - LF~~오류가 뜬다면?
     > git config --global core.autocrlf true 입력
