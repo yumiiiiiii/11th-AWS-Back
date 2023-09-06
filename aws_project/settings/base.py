@@ -15,6 +15,8 @@ from datetime import timedelta
 
 import environ
 
+AUTH_USER_MODEL = 'accounts.User'
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 env = environ.Env(
@@ -32,6 +34,9 @@ DEBUG = env('DEBUG')
 
 ALLOWED_HOSTS = ['*']
 
+# CORS 관련 추가
+CORS_ORIGIN_WHITELIST = ['*']
+CORS_ALLOW_CREDENTIALS = True
 
 
 # Application definition
@@ -58,7 +63,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-     "corsheaders.middleware.CorsMiddleware", #cors 보안
+    "corsheaders.middleware.CorsMiddleware", #cors 보안
     "django.middleware.common.CommonMiddleware",
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',

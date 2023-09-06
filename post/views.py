@@ -9,7 +9,10 @@ class PostViewSet(viewsets.ModelViewSet):
     serializer_class=PostSerializer
     filter_backends = [filters.SearchFilter]
     search_fields = ['title']
+    
+
 
 
     def perform_create(self, serializer):
-        serializer.save()
+        serializer.save(user=self.request.user)
+
